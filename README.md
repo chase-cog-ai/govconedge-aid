@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GovConEdge AI — Cognition Landing Page
 
-## Getting Started
+Presentation aid and landing page for the **GovConEdge AI Episode 2 (2026)** talk. Built with Next.js, Tailwind CSS, and deployed on Vercel.
 
-First, run the development server:
+**Live site:** [https://govconedge-aid.vercel.app/](https://govconedge-aid.vercel.app/)
+
+---
+
+## Local Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to preview locally. The page hot-reloads as you edit.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Key Files
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `src/app/page.tsx` — Main landing page content and components
+- `src/app/globals.css` — Theme, animations, and global styles
+- `src/app/layout.tsx` — Root layout and metadata
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Deploying to Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The site is connected to this GitHub repo and **deploys automatically** whenever you push to `main`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### To update the live site:
 
-## Deploy on Vercel
+```bash
+# 1. Make your changes locally
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+# 2. Stage and commit
+git add -A
+git commit -m "Your commit message"
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# 3. Push to main — Vercel will auto-deploy
+git push origin main
+```
+
+Vercel will build and deploy within ~60 seconds. Check the deployment status at the [Vercel dashboard](https://vercel.com).
+
+### Manual Redeploy (without code changes)
+
+If you need to trigger a fresh deploy without pushing new code, you can do so from the Vercel dashboard:
+
+1. Go to your project at [vercel.com](https://vercel.com)
+2. Click **Deployments**
+3. Click the **⋯** menu on the latest deployment → **Redeploy**
+
+---
+
+## Tech Stack
+
+- **Framework:** Next.js 16 (App Router)
+- **Styling:** Tailwind CSS v4
+- **Icons:** Lucide React
+- **Hosting:** Vercel
+- **Repo:** [github.com/chase-cog-ai/govconedge-aid](https://github.com/chase-cog-ai/govconedge-aid)
